@@ -1,0 +1,195 @@
+/* Style de cuerpo principal */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #43e97b 0%, #4644eede 100%);
+}
+
+.encabezado {
+  background-color: #432c39;
+}
+
+p,
+h3 {
+  color: rgb(7, 68, 68);
+  font-family: "mononoki", "Fira Code", monospace, Verdana, Geneva, Tahoma,
+    sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  padding-top: 18px;
+  font-family: "Signika Negative", sans-serif, "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+  font-size: 2.1em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+li {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Style de cuerpo principal */
+
+.section-catalogo {
+  background-image: linear-gradient(to right, #8ceead 0%, #9999bede 100%);
+}
+#productos {
+  margin: 10px;
+  padding-top: 50px;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-style: solid;
+  border-radius: 35px;
+  padding: 10px;
+}
+
+.lista {
+  margin: 30px auto 30px 20px;
+}
+
+.dsct {
+  color: #432c3957;
+  text-align: center;
+}
+
+.dsct span {
+  color: #432c39;
+}
+
+.dsct em {
+  text-decoration: line-through;
+}
+
+.table {
+  padding: 50px;
+  margin-top: -45;
+  border-spacing: 25px;
+}
+
+#logoWsp {
+  width: 64px;
+  border-radius: 32px;
+  position: fixed;
+
+  bottom: 50px;
+  right: 28px;
+}
+
+.logoWsp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-family: "mononoki", "Fira Code", monospace, "Courier New", Courier,
+    monospace, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #432c39;
+  color: #43e97b;
+}
+
+.button-vermas {
+  text-align: center;
+}
+
+.button-vermas button {
+  background-color: #432c39;
+}
+.button-vermas button a {
+  margin: 50px;
+  color: #43e97b;
+  font-family: "mononoki", "Fira Code", monospace, "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+  font-size: 23px;
+}
+footer {
+  /* margin: 25px 25px auto 25px; */
+  background-image: linear-gradient(to right, #43e97b 0%, #4644eede 100%);
+}
+
+.entra-form {
+  font-family: "mononoki", "Fira Code", monospace, "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif, "Times New Roman", Times, serif;
+  display: flex;
+}
+.entra-form #formu {
+  margin-left: 25px;
+  margin-top: 25px;
+  font-size: 30px;
+  /* background-color: #432c39; */
+  color: #56e987;
+}
+.derechos {
+  margin-left: 60px;
+  margin-top: 25px;
+  margin-right: 25px;
+  color: white;
+}
+
+.lineInicio {
+  width: 100%;
+  max-width: 1600px;
+  margin: 60px auto 60px auto;
+  height: 2.5px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.lineCreditos {
+  width: 25%;
+  max-width: 1200px;
+  margin: -20 auto;
+  height: 2.5px;
+  background: #432c39;
+  margin-bottom: 20px;
+}
+
+.lineSeparador {
+  width: 100%;
+  max-width: 1200px;
+  margin: -20 auto;
+  height: 2.5px;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+.lineFin {
+  width: 100%;
+  max-width: 1800px;
+  margin: -20 auto;
+  height: 2.5px;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+.datos {
+  margin: 10px auto 3px auto;
+  text-align: center;
+  color: #432c3973;
+  font-family: mononoki, "Fira Code", monospace, Verdana, Geneva, Tahoma,
+    sans-serif;
+  font-size: 20px;
+}
+
+.imagen {
+  height: 230px;
+}
+
+.carrito-add {
+  color: #432c39;
+  height: 230px;
+  font-size: 50px;
+}
+
+.text-carrito {
+  color: #ffffff;
+}

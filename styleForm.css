@@ -1,0 +1,115 @@
+* {
+  margin: 3;
+  padding: 20;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(0, 255, 0);
+  text-align: center;
+  font-style: italic;
+  font-size: 6ch;
+  margin-bottom: 2ch;
+}
+h2 {
+  color: yellow;
+}
+h3,
+h4 {
+  color: white;
+}
+
+span {
+  color: rgb(243, 97, 97);
+  font-size: 12px;
+}
+label,
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(83, 228, 90);
+}
+
+em {
+  color: rgba(118, 255, 63, 0.596);
+}
+
+.condi {
+  color: rgb(251, 255, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.todo {
+  background-image: linear-gradient(
+    -225deg,
+    #0d0820 0%,
+    #1f0936 29%,
+    #8d133c 67%,
+    #969111 100%
+  );
+}
+
+.form-completo {
+  width: 1000px;
+  background-color: rgba(0, 0, 0, 0.288);
+  padding: 50px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 150px;
+  font-family: "mononoki", "Fira Code", monospace, "calibri", "Courier New",
+    Courier, monospace, "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+.datos {
+  color: rgba(255, 255, 255, 0.678);
+  background-color: rgba(0, 0, 0, 0.363);
+  width: 250px;
+  height: 30px;
+  font-size: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.detalles {
+  color: rgba(255, 255, 255, 0.678);
+  background-color: rgba(0, 0, 0, 0.363);
+  width: 450px;
+  height: 30px;
+  font-size: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.archi {
+  color: rgba(255, 255, 255, 0.678);
+  width: 450px;
+}
+
+.button {
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+  background-color: rgba(0, 0, 0, 0.363);
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.logo {
+  text-align: center;
+}
+
+/* ? Style de la parte de agradecimiento */
+.ini {
+  color: #43e97b;
+  font-size: 29px;
+  font-family: "mononoki", "Fira Code", monospace, "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+}
