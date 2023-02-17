@@ -9,6 +9,7 @@ body {
   background-image: linear-gradient(to right, #43e97b 0%, #4644eede 100%);
 }
 
+
 p,
 h3 {
   color: rgb(7, 68, 68);
@@ -45,12 +46,10 @@ li {
 }
 
 #productos-catalogo {
-  margin: 50px auto 50px 10px;
-  padding-top: 10px;
   border-color: rgba(0, 0, 0, 0.3);
   border-style: solid;
-  border-radius: 50px;
-  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 70px;
 }
 
 #catalogo {
@@ -59,7 +58,7 @@ li {
 }
 
 .card {
-  margin: 50px auto auto auto;
+  margin: auto auto auto auto;
   border-radius: 20px;
   border-style: solid;
   background-color: transparent;
@@ -85,12 +84,6 @@ li {
 
 .dsct em {
   text-decoration: line-through;
-}
-
-.table {
-  padding: 50px;
-  margin-top: -45;
-  border-spacing: 25px;
 }
 
 #logoWsp {
@@ -128,11 +121,6 @@ li {
   font-size: 23px;
 }
 
-footer {
-  /* margin: 25px 25px auto 25px; */
-  background-image: linear-gradient(to right, #43e97b 0%, #4644eede 100%);
-}
-
 .entra-form {
   font-family: "mononoki", "Fira Code", monospace, "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif, "Times New Roman", Times, serif;
@@ -142,7 +130,7 @@ footer {
 .entra-form #formu {
   margin-left: 25px;
   margin-top: 25px;
-  font-size: 30px;
+  font-size: 19px;
   /* background-color: #432c39; */
   color: #56e987;
 }
@@ -220,19 +208,34 @@ footer {
 
 .modal-body {
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans",
+    "Lucida Sans Regular",
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Geneva,
+    Verdana,
+    sans-serif;
 }
 
 .btn-secondary {
   background-color: #43e97b;
   border-color: transparent;
-  font-family: mononoki, "Fira Code", monospace, Verdana, Geneva, Tahoma,
+  font-family: mononoki,
+    "Fira Code",
+    monospace,
+    Verdana,
+    Geneva,
+    Tahoma,
     sans-serif;
 }
 
 #exampleModalLabel {
   color: #43e97b;
-  font-family: mononoki, "Fira Code", monospace, Verdana, Geneva, Tahoma,
+  font-family: mononoki,
+    "Fira Code",
+    monospace,
+    Verdana,
+    Geneva,
+    Tahoma,
     sans-serif;
 }
