@@ -19,7 +19,7 @@ h3 {
 }
 
 h1 {
-  padding-top: 18px;
+  padding-top: 15px;
   font-family: "Signika Negative", sans-serif, "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif;
   font-size: 2.1em;
@@ -49,7 +49,7 @@ li {
   border-color: rgba(0, 0, 0, 0.3);
   border-style: solid;
   border-radius: 10px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 #catalogo {
@@ -58,7 +58,7 @@ li {
 }
 
 .card {
-  margin: auto auto auto auto;
+  margin: auto;
   border-radius: 20px;
   border-style: solid;
   background-color: transparent;
@@ -131,7 +131,6 @@ li {
   margin-left: 25px;
   margin-top: 25px;
   font-size: 19px;
-  /* background-color: #432c39; */
   color: #56e987;
 }
 
