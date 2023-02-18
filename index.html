@@ -28,44 +28,7 @@
 
 </head>
 
-<!-- * INICIO CLASES -->
-
-<!-- ? Clase para centrar objetos-->
-<style>
-  .obj-center {
-    text-align: center;
-  }
-
-  .margen {
-    margin: 10px auto 40px auto;
-    text-align: center;
-  }
-</style>
-
-<!-- ? Clase para poner en margen los botones -->
-<style>
-  .margin-button {
-    margin: 30px;
-  }
-</style>
-
-<!-- ? Clase para poner color Título de Productos -->
-<style>
-  .color-Prod {
-    color: rgb(227, 252, 0);
-  }
-</style>
-
-<!-- ? Clase para poner color Título de Especificaciones -->
-<style>
-  .color-Espe {
-    color: rgb(255, 255, 255);
-    text-decoration: underline;
-    text-align: center;
-  }
-</style>
-
-<!-- * FIN CLASES -->
+<!-- ? Ponemos la función y con un onload para que cuando cargue la página muestre el Modal -->
 
 <body onload="welcomeFuncion()">
 
@@ -73,9 +36,9 @@
 
   <div id="encabezado">
 
-    <h1 id="encabezado" class="obj-center">
-      <strong>
-        <em>
+    <!-- ? Título -->
+    <h1 id="encabezado">
+      <strong><em>
           <h1 class="color-Prod">Catálogo Año Nuevo GlobTecx-</h1>
         </em>
       </strong>
@@ -83,12 +46,12 @@
 
     <!-- ? Logo de la empresa -->
 
-    <div class="obj-center" style="margin-top: -70px">
+    <div style="margin-top: -70px">
       <img width="555px" height="555px" src="img/logoWhite.png" alt="Logo GlobTecx-" />
     </div>
 
     <!-- ? Tiempo de oferta -->
-    <p class="obj-center" style="margin-top: -70px">
+    <p style="margin-top: -70px">
       <strong><em style="color: rgb(236, 191, 42)">
           Catálogo Tecnológico de la Empresa GlobTecx-.
         </em></strong>
@@ -103,14 +66,13 @@
         </a>
       </em>
     </p>
+
     <!-- ? Contácto WSP 2 -->
     <h5 class="logoWsp">WhatsApp</h5>
     <a target="_blank" href="https://api.whatsapp.com/send?phone=51932125600">
       <img id="logoWsp" src="img/whatsapp2.png" alt="whatsapp">
     </a>
   </div>
-
-
 
   <!-- * INICIO DEL CATÁLOGO -->
 
@@ -123,16 +85,19 @@
     <!-- Contenedor de Bootstrap -->
     <div class="container">
 
-      <div class="row">
+      <div class="row"> <!-- Fila Bootstrap-->
+
         <!-- ? LAPTOP ACER NITRO G5 -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">Laptop Acer Nitro G5</h3>
+          <h3 id="catalogo">Laptop Acer Nitro G5</h3>
           <center>
             <img width="300px" src="img/productos/acer.png" />
           </center>
+
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
+
           <div class="especificaciones">
             <p>
               Laptop de último modelo con alta gama de técnología, ideal para
@@ -141,6 +106,7 @@
               de ingeniería y arquitectura.
             </p>
           </div>
+
           <strong>
             <div class="lista">
               <li>Core i9 11va Generación</li>
@@ -152,32 +118,31 @@
             </div>
             <p class="dsct">
               <em> S/ 7,999.00</em> <span> -20%</span>
-            <p class="color-Espe">
+            <p class="precio">
               S/ <em>6,399.00</em>
             </p>
             </p>
             <div class="button-vermas">
-              <button class="margin-button"> <a href="https://www.acer.com/mx-es/laptops/nitro/nitro-5/pdp/NH.QEKAL.004"
-                  target="_blank" rel="Foto Extraida de la Página Oficial de ACER MX">VER MÁS</a> </button>
+              <button> <a href="https://www.acer.com/mx-es/laptops/nitro/nitro-5/pdp/NH.QEKAL.004" target="_blank"
+                  rel="Foto Extraida de la Página Oficial de ACER MX">VER MÁS</a> </button>
 
               <!-- ? Carrito -->
               <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
                 al Carrito
-              <p></p>
+              </p>
 
             </div>
-
           </strong>
         </div>
 
         <!-- ? Tarjeta Gráfica RTX 3090 -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">Tarjeta Gráfica RTX 3090 Ti</h3>
+          <h3 id="catalogo">Tarjeta Gráfica RTX 3090 Ti</h3>
           <center>
             <img width="300px" src="img/productos/grafica.png" />
           </center>
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
           <div class="especificaciones">
             <p>
@@ -196,14 +161,13 @@
             </div>
             <p class="dsct">
               <em> S/ 8,520.00</em> <span> -15%</span>
-            <p class="color-Espe">
+            <p class="precio">
               S/ <em>7,242.00</em>
             </p>
             </p>
             <div class="button-vermas">
-              <button class="margin-button"> <a
-                  href="https://www.nvidia.com/es-la/geforce/graphics-cards/30-series/rtx-3090-3090ti/" target="_blank"
-                  rel="link a la página oficial">VER MÁS</a> </button>
+              <button> <a href="https://www.nvidia.com/es-la/geforce/graphics-cards/30-series/rtx-3090-3090ti/"
+                  target="_blank" rel="link a la página oficial">VER MÁS</a> </button>
 
               <!-- ? Carrito -->
               <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
@@ -218,12 +182,12 @@
         <!-- Siguiente producto -->
         <!-- ? Teclado Mecánico Logitech G Pro -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">Teclado Mecánico Logitech G Pro</h3>
+          <h3 id="catalogo">Teclado Mecánico Logitech G Pro</h3>
           <center>
             <img width="300px" src="img/productos/teclado.png" />
           </center>
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
           <div class="especificaciones">
             <p>
@@ -242,12 +206,11 @@
               </div>
               <p class="dsct">
                 <em> S/ 504.00</em> <span> -20%</span>
-              <p class="color-Espe">
+              <p class="precio">
                 S/ <em>404.00</em>
               </p>
-              </p>
               <div class="button-vermas">
-                <button class="margin-button"> <a
+                <button> <a
                     href="https://www.logitechg.com/es-roam/products/gaming-keyboards/league-of-legends-pro-mechanical-gaming-keyboard.920-010533.html"
                     target="_blank" rel="link a la página oficial">VER MÁS</a></button>
                 <div class="lineSeparador"></div>
@@ -268,13 +231,13 @@
         <!-- Siguiente producto -->
         <!-- ? Monitor Gaming UltraGear™ -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">Monitor Gaming UltraGear™</h3>
+          <h3 id="catalogo">Monitor Gaming UltraGear™</h3>
           <center>
             <img width="300px" src="img/productos/monitor.png" />
           </center>
 
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
           <div style="text-align: justify">
             <p>
@@ -294,12 +257,11 @@
               </div>
               <p class="dsct">
                 <em> S/ 1,499.00</em> <span> -30%</span>
-              <p class="color-Espe">
+              <p class="precio">
                 S/ <em>1049.00</em>
               </p>
-              </p>
               <div class="button-vermas">
-                <button class="margin-button"> <a href="https://www.lg.com/pe/monitores/lg-32gn50r-b" target="_blank"
+                <button> <a href="https://www.lg.com/pe/monitores/lg-32gn50r-b" target="_blank"
                     rel="link a la página oficial">VER MÁS</a> </button>
 
                 <!-- ? Carrito -->
@@ -316,12 +278,12 @@
         <!-- SIGUIENTE PRODUCTO -->
         <!--? Audífono Logitech G735 Aurora -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">Audífono Logitech G735 Aurora</h3>
+          <h3 id="catalogo">Audífono Logitech G735 Aurora</h3>
           <center>
             <img width="300px" src="img/productos/cascos.png" />
           </center>
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
           <div class="especificaciones">
             <p>
@@ -344,12 +306,11 @@
               </div>
               <p class="dsct">
                 <em> S/ 699.00</em> <span> -20%</span>
-              <p class="color-Espe">
+              <p class="precio">
                 S/ <em>559.00</em>
               </p>
-              </p>
               <div class="button-vermas">
-                <button class="margin-button"> <a
+                <button> <a
                     href="https://www.logitechg.com/es-roam/products/gaming-audio/g735-wireless-bluetooth-headset.981-001082.html"
                     target="_blank" rel="link a la página oficial">VER MÁS</a> </button>
 
@@ -367,12 +328,12 @@
         <!-- SIGUIENTE PRODUCTO -->
         <!-- ? LG Gaming Speaker GP9 Ultragear -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">LG Gaming Speaker GP9</h3>
+          <h3 id="catalogo">LG Gaming Speaker GP9</h3>
           <center>
             <img width="300px" src="img/productos/sonidoLG.png" />
           </center>
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
           <div class="especificaciones">
             <p>
@@ -394,12 +355,11 @@
               </div>
               <p class="dsct">
                 <em> S/ 3,504.00</em> <span> -50%</span>
-              <p class="color-Espe">
+              <p class="precio">
                 S/ <em>1,752.00</em>
               </p>
-              </p>
               <div class="button-vermas">
-                <button class="margin-button"> <a href="https://www.lg.com/pe/equipos-de-sonido/lg-gp9" target="_blank"
+                <button> <a href="https://www.lg.com/pe/equipos-de-sonido/lg-gp9" target="_blank"
                     rel="link a la página oficial">VER MÁS</a></button>
                 <!-- ? Carrito -->
                 <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
@@ -415,12 +375,12 @@
         <!-- Siguiente Producto -->
         <!-- ? RTX 3070 TI 8GB GDDR6X -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">Tarjeta Gráfica RTX 3070 Ti </h3>
+          <h3 id="catalogo">Tarjeta Gráfica RTX 3070 Ti </h3>
           <center>
             <img width="300px" src="img/productos/rtx3070ti.png" />
           </center>
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
           <div style="text-align: justify">
             <p>
@@ -440,13 +400,11 @@
               </div>
               <p class="dsct">
                 <em> S/ 6,889.00</em> <span> -30%</span>
-              <p class="color-Espe">
+              <p class="precio">
                 S/ <em>4,824.00</em>
               </p>
-              </p>
               <div class="button-vermas">
-                <button class="margin-button"> <a
-                    href="https://www.nvidia.com/es-la/geforce/graphics-cards/30-series/rtx-3070-3070ti/"
+                <button> <a href="https://www.nvidia.com/es-la/geforce/graphics-cards/30-series/rtx-3070-3070ti/"
                     target="_blank" rel="link a la página oficial">VER MÁS</a></button>
 
                 <!-- ? Carrito -->
@@ -463,12 +421,12 @@
         <!-- SIGUIENTE PRODUCOT -->
         <!-- ? Laptop ROG Strix G17 -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">Laptop ROG Strix G17</h3>
+          <h3 id="catalogo">Laptop ROG Strix G17</h3>
           <center>
             <img width="300px" src="img/productos/laptopROG.png" />
           </center>
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
           <div style="text-align: justify">
             <p>
@@ -489,13 +447,11 @@
               </div>
               <p class="dsct">
                 <em> S/ 13,299.00</em> <span> -20%</span>
-              <p class="color-Espe">
+              <p class="precio">
                 S/ <em>11,119</em>
               </p>
-              </p>
               <div class="button-vermas">
-                <button class="margin-button"> <a
-                    href="https://rog.asus.com/pe/laptops/rog-strix/2021-rog-strix-g17-series/" target="_blank"
+                <button> <a href="https://rog.asus.com/pe/laptops/rog-strix/2021-rog-strix-g17-series/" target="_blank"
                     rel="link a la página oficial">VER MÁS</a> </button>
 
                 <!-- ? Carrito -->
@@ -514,14 +470,14 @@
         <!-- Siguiente Producto -->
         <!-- ? REDRAGON YAMA WHITE RGB K550W-SP -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo" class="color-Prod" class="margin-button">REDRAGON Yama White RGB</h3>
+          <h3 id="catalogo">REDRAGON Yama White RGB</h3>
           <center>
             <img width="300px" src="img/productos/yamaRedragon.png" />
           </center>
           <h4>
-            <strong class="color-Espe">Especificaciones</strong>
+            <strong class="texto-especfica">Especificaciones</strong>
           </h4>
-          <div style="text-align: justify">
+          <div>
             <p>
               Los Yama Black y White lo tienen todo. ¿Macros? ¡Muchas! ¿Teclas multimedia y RGB dedicadas? Todas.
               ¿Rueda
@@ -529,7 +485,6 @@
             </p>
 
             <strong>
-
               <div class="lista">
                 <li>Outemu purple</li>
                 <li>Teclado 100%</li>
@@ -540,29 +495,22 @@
               </div>
               <p class="dsct">
                 <em> S/ 450.00</em> <span> -15%</span>
-              <p class="color-Espe">
+              <p class="precio">
                 S/ <em>382.50</em>
               </p>
-              </p>
               <div class="button-vermas">
-                <button class="margin-button"> <a href="https://redragon.es/products/yama-k550/" target="_blank"
+                <button> <a href="https://redragon.es/products/yama-k550/" target="_blank"
                     rel="link a la página oficial">VER MÁS</a></button>
-
                 <!-- ? carrito -->
                 <p class="text-carrito"><a class="carrito-add" href="#">
                     <i class='bx bx-cart-add'></i>
                   </a> <br> Añadir al Carrito
                 <p>
-
               </div>
-
-
             </strong>
-
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- fin de productos -->
     <div class="lineFin"></div>
@@ -570,6 +518,7 @@
 
   <!-- * PIE DE PÁGINA -->
   <footer class="pie-pagina">
+
     <!-- LINEA SEPARADORA -->
     <div class="container">
       <div class="entra-form">
@@ -587,6 +536,8 @@
         <img class="imagen" src="img/logoBlack.png" alt="">
       </center>
       <div class="lineCreditos"></div>
+
+      <!-- ? Créditos del creador -->
       <div class="datos">
         <h5>
           Página Realizada Por: {Yb.M};<br>
@@ -596,7 +547,7 @@
     </div>
   </footer>
 
-  <!-- Modal -->
+  <!-- ? Modal Que Se Muestra Al Inciar La Página-->
   <div class="modal fade" id="modalEntrada" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -615,6 +566,7 @@
     </div>
   </div>
 
+  <!-- ? Indicamos la dirección del JS de bootstrap -->
   <script src="js/bootstrap.js"> </script>
 
 

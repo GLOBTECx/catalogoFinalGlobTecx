@@ -1,3 +1,4 @@
+/* * Style de cuerpo principal */
 * {
   margin: 3;
   padding: 20;
@@ -11,9 +12,11 @@ h1 {
   font-size: 6ch;
   margin-bottom: 2ch;
 }
+
 h2 {
   color: yellow;
 }
+
 h3,
 h4 {
   color: white;
@@ -23,6 +26,7 @@ span {
   color: rgb(243, 97, 97);
   font-size: 12px;
 }
+
 label,
 p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -33,21 +37,18 @@ em {
   color: rgba(118, 255, 63, 0.596);
 }
 
-.condi {
-  color: rgb(251, 255, 0);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
+/* * Parte del formulario */
 
+/* ? Se Definió el Color de Fondo de la Página */
 .todo {
-  background-image: linear-gradient(
-    -225deg,
-    #0d0820 0%,
-    #1f0936 29%,
-    #8d133c 67%,
-    #969111 100%
-  );
+  background-image: linear-gradient(-225deg,
+      #0d0820 0%,
+      #1f0936 29%,
+      #8d133c 67%,
+      #969111 100%);
 }
 
+/* ? Parte General del Formulario (Texto-Borde-Fuente) */
 .form-completo {
   width: 1000px;
   background-color: rgba(0, 0, 0, 0.288);
@@ -60,6 +61,8 @@ em {
     Courier, monospace, "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
 }
+
+/* ? Parte Dónde Se Pondrán Los Datos Del Remitente */
 .datos {
   color: rgba(255, 255, 255, 0.678);
   background-color: rgba(0, 0, 0, 0.363);
@@ -67,11 +70,11 @@ em {
   height: 30px;
   font-size: 1em;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
+
+
+
+/* ? Sección para escribir los detalles extras */
 .detalles {
   color: rgba(255, 255, 255, 0.678);
   background-color: rgba(0, 0, 0, 0.363);
@@ -79,16 +82,21 @@ em {
   height: 30px;
   font-size: 1em;
   border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
+
+/* ? Texto Donde Se Sube Archivos */
 .archi {
   color: rgba(255, 255, 255, 0.678);
   width: 450px;
 }
 
+/* ? Texto Para Ir al término y condiciones */
+.condi {
+  color: rgb(251, 255, 0);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/* ? Botón De Enviar Consulta */
 .button {
   color: rgb(255, 255, 255);
   font-size: x-large;
@@ -96,17 +104,16 @@ em {
   width: 250px;
   height: 50px;
   border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
 }
 
+/* ? Logo Final */
 .logo {
   text-align: center;
 }
 
-/* ? Style de la parte de agradecimiento */
+/* * Style de la página de agradecimiento.html */
+
+/* ? Texto De Volver Al Incio */
 .ini {
   color: #43e97b;
   font-size: 29px;

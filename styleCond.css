@@ -1,18 +1,14 @@
+/* * Style del cuerpo principal */
+
 * {
   margin: 20px;
 }
-.text {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
-}
+
+/* * Se Define El Estilo Que Tendrá el Texto Por Defecto */
 p {
   color: white;
   font-family: "mononoki", "Fira Code", monospace, "Courier New", Courier,
     monospace, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.img {
-  width: 150px;
-  height: 150px;
 }
 
 h1 {
@@ -25,10 +21,21 @@ h1 {
 
 h5 {
   color: rgb(134, 253, 118);
-
   text-align: end;
   font-size: x-large;
   font-family: "mononoki", "Fira Code", monospace, "Courier", "Courier New",
     Courier, monospace, "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
+}
+
+/* * Estilos de la parte del cuerpo */
+/* ? Se establece el color de fondo */
+.cuerpo {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+/* ? Imagen del Logo de la Empresa */
+.img {
+  width: 150px;
+  height: 150px;
 }

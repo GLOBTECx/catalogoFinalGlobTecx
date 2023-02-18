@@ -1,15 +1,16 @@
-/* Style de cuerpo principal */
+/* * Style de cuerpo principal */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+/* ? Color de fondo de todo el cuerpo de la página */
 body {
   background-image: linear-gradient(to right, #43e97b 0%, #4644eede 100%);
 }
 
-
+/* ? Definimos los valores por defecto de los textos HTML */
 p,
 h3 {
   color: rgb(7, 68, 68);
@@ -39,12 +40,86 @@ li {
     "Lucida Sans", Arial, sans-serif;
 }
 
-/* Style de cuerpo Secundario */
+/* * Botón De Contácto Para el WhatsApp */
 
+/* ? Logo */
+#logoWsp {
+  width: 64px;
+  border-radius: 32px;
+  position: fixed;
+  bottom: 50px;
+  right: 28px;
+}
+
+/* ? Letra del Logo */
+.logoWsp {
+  position: fixed;
+  font-size: 15px;
+  bottom: 20px;
+  right: 25px;
+  font-family: "mononoki", "Fira Code", monospace, "Courier New", Courier,
+    monospace, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #432c39;
+  color: #43e97b;
+}
+
+/* * Lineas Decorativas de la Página */
+
+/* ? Linea del encabezado */
+.lineInicio {
+  width: 100%;
+  max-width: 1600px;
+  margin: 60px auto 60px auto;
+  height: 2.5px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+/* ? Linea Para Separar Los Producots 3x3 Del Catálogo */
+.separador-linea {
+  width: 100%;
+  max-width: 1200px;
+  margin: -20 auto;
+  height: 2.5px;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* ? Linea Final Para dar Paso Al Footer */
+.lineFin {
+  width: 100%;
+  max-width: 1800px;
+  margin: -20 auto;
+  height: 2.5px;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* ? Linea Que Aparece después del Logo del Footer Para Dar Paso A Los Créditos del Creador */
+.lineCreditos {
+  width: 25%;
+  max-width: 1200px;
+  margin: -20 auto;
+  height: 2.5px;
+  background: #432c39;
+  margin-bottom: 20px;
+}
+
+/* * Encabezado */
+#encabezado {
+  text-align: center;
+  color: rgb(227, 252, 0);
+  text-align: center;
+}
+
+/* * Estilos de la parte del catálOgo (mitad de la página)*/
+
+/* ? Color de Fondo Que De La Sección del Catálogo*/
 .section-catalogo {
   background-image: linear-gradient(to right, #8ceead 0%, #9999bede 100%);
 }
 
+/* ? Borde De Los Productos */
 #productos-catalogo {
   border-color: rgba(0, 0, 0, 0.3);
   border-style: solid;
@@ -52,27 +127,32 @@ li {
   margin-bottom: 50px;
 }
 
+/* ? Texto Del Nombre de los Productos*/
 #catalogo {
+  color: rgb(227, 252, 0);
   text-align: center;
   padding-top: 30px;
 }
 
-.card {
-  margin: auto;
-  border-radius: 20px;
-  border-style: solid;
-  background-color: transparent;
-  padding: 20px;
+/* ? Texto Especifica */
+.texto-especfica {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  text-align: center;
 }
 
+/* ? Especificación de cada producto */
 .especificaciones {
   text-align: justify;
+
 }
 
+/* ? Lista de Especificaciones de Los Productos */
 .lista {
   margin: 30px auto 30px 20px;
 }
 
+/* Parte del Descuento */
 .dsct {
   color: #432c3957;
   text-align: center;
@@ -86,24 +166,12 @@ li {
   text-decoration: line-through;
 }
 
-#logoWsp {
-  width: 64px;
-  border-radius: 32px;
-  position: fixed;
-  bottom: 50px;
-  right: 28px;
+/* Parte del Precio */
+.precio {
+  text-align: center;
 }
 
-.logoWsp {
-  position: fixed;
-  font-size: 15px;
-  bottom: 20px;
-  right: 25px;
-  font-family: "mononoki", "Fira Code", monospace, "Courier New", Courier,
-    monospace, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #432c39;
-  color: #43e97b;
-}
+/* Parte de los botones que redireccionan a la página oficial de los productos */
 
 .button-vermas {
   text-align: center;
@@ -121,6 +189,21 @@ li {
   font-size: 23px;
 }
 
+/* Parte del carrito */
+.carrito-add {
+  color: #432c39;
+  height: 230px;
+  font-size: 50px;
+}
+
+.text-carrito {
+  color: #ffffff;
+}
+
+
+/* * Estilos del footer (Pié De Página) */
+
+/* ? Texto que aparece para entrar a la página */
 .entra-form {
   font-family: "mononoki", "Fira Code", monospace, "Franklin Gothic Medium",
     "Arial Narrow", Arial, sans-serif, "Times New Roman", Times, serif;
@@ -134,6 +217,7 @@ li {
   color: #56e987;
 }
 
+/* ? Derechos Reservados */
 .derechos {
   margin-left: 60px;
   margin-top: 25px;
@@ -141,42 +225,7 @@ li {
   color: white;
 }
 
-.lineInicio {
-  width: 100%;
-  max-width: 1600px;
-  margin: 60px auto 60px auto;
-  height: 2.5px;
-  background: white;
-  margin-bottom: 20px;
-}
-
-.lineCreditos {
-  width: 25%;
-  max-width: 1200px;
-  margin: -20 auto;
-  height: 2.5px;
-  background: #432c39;
-  margin-bottom: 20px;
-}
-
-.separador-linea {
-  width: 100%;
-  max-width: 1200px;
-  margin: -20 auto;
-  height: 2.5px;
-  background: #ffffff;
-  margin-bottom: 10px;
-}
-
-.lineFin {
-  width: 100%;
-  max-width: 1800px;
-  margin: -20 auto;
-  height: 2.5px;
-  background: #ffffff;
-  margin-bottom: 10px;
-}
-
+/* ? Créditos del Creador */
 .datos {
   margin: 10px auto 3px auto;
   text-align: center;
@@ -186,25 +235,18 @@ li {
   font-size: 20px;
 }
 
+/* ? Logo de la empresa */
 .imagen {
   height: 230px;
 }
 
-.carrito-add {
-  color: #432c39;
-  height: 230px;
-  font-size: 50px;
-}
-
-.text-carrito {
-  color: #ffffff;
-}
-
+/* * Esto son los estilos de la ventana emergente que aparece cuando carga la pantalla */
 .ofertas-img {
   height: 370px;
   width: 300px;
 }
 
+/* ? Texto Dónde Indica El Tiempo de la Oferta */
 .modal-body {
   text-align: center;
   font-family: "Lucida Sans",
@@ -216,6 +258,7 @@ li {
     sans-serif;
 }
 
+/* ? Botón Cerrrar */
 .btn-secondary {
   background-color: #43e97b;
   border-color: transparent;
@@ -228,6 +271,7 @@ li {
     sans-serif;
 }
 
+/* ? Texto Principal de la Ventana */
 #exampleModalLabel {
   color: #43e97b;
   font-family: mononoki,
