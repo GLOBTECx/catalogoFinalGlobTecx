@@ -47,21 +47,27 @@ li {
   width: 64px;
   border-radius: 32px;
   position: fixed;
-  bottom: 50px;
-  right: 28px;
+  bottom: 20px;
+  right: 20px;
 }
 
-/* ? Letra del Logo */
-.logoWsp {
+
+/* * Botón Que Mostrará Las Cosas Que Hay en el Carrito */
+
+/* ? Redimensionando Aspectos del Botón*/
+.btn-success {
+  margin: 30px auto auto auto;
+  padding: 10px 10px 10px 25px;
   position: fixed;
-  font-size: 15px;
-  bottom: 20px;
-  right: 25px;
-  font-family: "mononoki", "Fira Code", monospace, "Courier New", Courier,
-    monospace, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #432c39;
-  color: #43e97b;
+  left: -5px;
+  border-color: transparent;
 }
+
+/* ? Texto de los botones */
+.texto-boton {
+  font-family: "mononoki", "Fira Code", monospace, 'Courier New', Courier, sans-serif;
+}
+
 
 /* * Lineas Decorativas de la Página */
 
@@ -166,12 +172,12 @@ li {
   text-decoration: line-through;
 }
 
-/* Parte del Precio */
+/* ? Parte del Precio */
 .precio {
   text-align: center;
 }
 
-/* Parte de los botones que redireccionan a la página oficial de los productos */
+/* ? Parte de los botones que redireccionan a la página oficial de los productos */
 
 .button-vermas {
   text-align: center;
@@ -189,7 +195,7 @@ li {
   font-size: 23px;
 }
 
-/* Parte del carrito */
+/* ? Parte del carrito */
 .carrito-add {
   color: #432c39;
   height: 230px;
@@ -242,43 +248,17 @@ li {
 
 /* * Esto son los estilos de la ventana emergente que aparece cuando carga la pantalla */
 .ofertas-img {
-  height: 370px;
-  width: 300px;
+  width: 498px;
 }
 
 /* ? Texto Dónde Indica El Tiempo de la Oferta */
 .modal-body {
   text-align: center;
-  font-family: "Lucida Sans",
-    "Lucida Sans Regular",
-    "Lucida Grande",
-    "Lucida Sans Unicode",
-    Geneva,
-    Verdana,
-    sans-serif;
-}
-
-/* ? Botón Cerrrar */
-.btn-secondary {
-  background-color: #43e97b;
-  border-color: transparent;
-  font-family: mononoki,
-    "Fira Code",
-    monospace,
-    Verdana,
-    Geneva,
-    Tahoma,
-    sans-serif;
+  font-family: mononoki, "Fira Code", monospace, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* ? Texto Principal de la Ventana */
 #exampleModalLabel {
   color: #43e97b;
-  font-family: mononoki,
-    "Fira Code",
-    monospace,
-    Verdana,
-    Geneva,
-    Tahoma,
-    sans-serif;
+  font-family: mononoki, "Fira Code", monospace, Verdana, Geneva, Tahoma, sans-serif;
 }

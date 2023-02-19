@@ -33,8 +33,44 @@
 <body onload="welcomeFuncion()">
 
   <!-- * Introducción -->
-
   <div id="encabezado">
+
+    <!-- * Carrito de Compras -->
+
+    <!-- Botón del Carrito de Compras -->
+    <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoCompra"
+      aria-controls="carritoCompra">
+
+      <!-- Imagen de Carrito -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag"
+        viewBox="0 0 16 16">
+        <path
+          d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+      </svg>
+
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="carritoCompra"
+      aria-labelledby="carritoCompraLabel">
+
+      <!-- Titulo Del Carrito-->
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="carritoCompraLabel"> Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <!-- Cuerpo Del Carrito -->
+      <div class="offcanvas-body">
+        <p>NO TIENES PRODUCTOS EN TU CARRITO</p>
+        <p>Mejores Precios Siempre Aquí</p>
+      </div>
+
+      <!-- Botones del Carrito -->
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-warning" type="button"> <span class="texto-boton">PROCESAR COMPRA</span></button>
+        <button class="btn btn-light" type="button"> <span class="texto-boton">Borrar Todo</span> </button>
+      </div>
+    </div>
 
     <!-- ? Título -->
     <h1 id="encabezado">
@@ -68,7 +104,6 @@
     </p>
 
     <!-- ? Contácto WSP 2 -->
-    <h5 class="logoWsp">WhatsApp</h5>
     <a target="_blank" href="https://api.whatsapp.com/send?phone=51932125600">
       <img id="logoWsp" src="img/whatsapp2.png" alt="whatsapp">
     </a>
@@ -89,7 +124,7 @@
 
         <!-- ? LAPTOP ACER NITRO G5 -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">Laptop Acer Nitro G5</h3>
+          <h3 id="catalogo" class="titulo"> Laptop Acer Nitro G5</h3>
           <center>
             <img width="300px" src="img/productos/acer.png" />
           </center>
@@ -127,8 +162,9 @@
                   rel="Foto Extraida de la Página Oficial de ACER MX">VER MÁS</a> </button>
 
               <!-- ? Carrito -->
-              <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
-                al Carrito
+              <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                  <i class='bx bx-cart-add'></i> </a> <br>
+                Añadir al Carrito
               </p>
 
             </div>
@@ -137,7 +173,7 @@
 
         <!-- ? Tarjeta Gráfica RTX 3090 -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">Tarjeta Gráfica RTX 3090 Ti</h3>
+          <h3 id="catalogo" class="titulo">Tarjeta Gráfica RTX 3090 Ti</h3>
           <center>
             <img width="300px" src="img/productos/grafica.png" />
           </center>
@@ -170,9 +206,10 @@
                   target="_blank" rel="link a la página oficial">VER MÁS</a> </button>
 
               <!-- ? Carrito -->
-              <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
-                al Carrito
-              <p></p>
+              <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                  <i class='bx bx-cart-add'></i> </a> <br>
+                Añadir al Carrito
+              </p>
 
             </div>
 
@@ -182,7 +219,7 @@
         <!-- Siguiente producto -->
         <!-- ? Teclado Mecánico Logitech G Pro -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">Teclado Mecánico Logitech G Pro</h3>
+          <h3 id="catalogo" class="titulo">Teclado Mecánico Logitech G Pro</h3>
           <center>
             <img width="300px" src="img/productos/teclado.png" />
           </center>
@@ -216,9 +253,10 @@
                 <div class="lineSeparador"></div>
 
                 <!-- ? Carrito -->
-                <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
-                  al Carrito
-                <p></p>
+                <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                    <i class='bx bx-cart-add'></i> </a> <br>
+                  Añadir al Carrito
+                </p>
               </div>
 
             </strong>
@@ -231,7 +269,7 @@
         <!-- Siguiente producto -->
         <!-- ? Monitor Gaming UltraGear™ -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">Monitor Gaming UltraGear™</h3>
+          <h3 id="catalogo" class="titulo">Monitor Gaming UltraGear™</h3>
           <center>
             <img width="300px" src="img/productos/monitor.png" />
           </center>
@@ -265,9 +303,10 @@
                     rel="link a la página oficial">VER MÁS</a> </button>
 
                 <!-- ? Carrito -->
-                <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
-                  al Carrito
-                <p></p>
+                <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                    <i class='bx bx-cart-add'></i> </a> <br>
+                  Añadir al Carrito
+                </p>
               </div>
 
 
@@ -278,7 +317,7 @@
         <!-- SIGUIENTE PRODUCTO -->
         <!--? Audífono Logitech G735 Aurora -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">Audífono Logitech G735 Aurora</h3>
+          <h3 id="catalogo" class="titulo">Audífono Logitech G735 Aurora</h3>
           <center>
             <img width="300px" src="img/productos/cascos.png" />
           </center>
@@ -315,9 +354,10 @@
                     target="_blank" rel="link a la página oficial">VER MÁS</a> </button>
 
                 <!-- ? Carrito -->
-                <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
-                  al Carrito
-                <p></p>
+                <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                    <i class='bx bx-cart-add'></i> </a> <br>
+                  Añadir al Carrito
+                </p>
               </div>
 
             </strong>
@@ -328,7 +368,7 @@
         <!-- SIGUIENTE PRODUCTO -->
         <!-- ? LG Gaming Speaker GP9 Ultragear -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">LG Gaming Speaker GP9</h3>
+          <h3 id="catalogo" class="titulo">LG Gaming Speaker GP9</h3>
           <center>
             <img width="300px" src="img/productos/sonidoLG.png" />
           </center>
@@ -362,9 +402,10 @@
                 <button> <a href="https://www.lg.com/pe/equipos-de-sonido/lg-gp9" target="_blank"
                     rel="link a la página oficial">VER MÁS</a></button>
                 <!-- ? Carrito -->
-                <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br> Añadir
-                  al Carrito
-                <p></p>
+                <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                    <i class='bx bx-cart-add'></i> </a> <br>
+                  Añadir al Carrito
+                </p>
               </div>
             </strong>
           </div>
@@ -375,7 +416,7 @@
         <!-- Siguiente Producto -->
         <!-- ? RTX 3070 TI 8GB GDDR6X -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">Tarjeta Gráfica RTX 3070 Ti </h3>
+          <h3 id="catalogo" class="titulo">Tarjeta Gráfica RTX 3070 Ti </h3>
           <center>
             <img width="300px" src="img/productos/rtx3070ti.png" />
           </center>
@@ -408,10 +449,10 @@
                     target="_blank" rel="link a la página oficial">VER MÁS</a></button>
 
                 <!-- ? Carrito -->
-                <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br>
-                  Añadir
-                  al Carrito
-                <p></p>
+                <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                    <i class='bx bx-cart-add'></i> </a> <br>
+                  Añadir al Carrito
+                </p>
               </div>
             </strong>
 
@@ -421,7 +462,7 @@
         <!-- SIGUIENTE PRODUCOT -->
         <!-- ? Laptop ROG Strix G17 -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">Laptop ROG Strix G17</h3>
+          <h3 id="catalogo" class="titulo"> Laptop ROG Strix G17 </h3>
           <center>
             <img width="300px" src="img/productos/laptopROG.png" />
           </center>
@@ -455,10 +496,10 @@
                     rel="link a la página oficial">VER MÁS</a> </button>
 
                 <!-- ? Carrito -->
-                <p class="text-carrito"><a class="carrito-add" href="#"> <i class='bx bx-cart-add'></i> </a> <br>
-                  Añadir
-                  al Carrito
-                <p></p>
+                <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                    <i class='bx bx-cart-add'></i> </a> <br>
+                  Añadir al Carrito
+                </p>
               </div>
 
 
@@ -470,7 +511,7 @@
         <!-- Siguiente Producto -->
         <!-- ? REDRAGON YAMA WHITE RGB K550W-SP -->
         <div id="productos-catalogo" class="col-12 col-sm-6 col-md-4 col-lg-4">
-          <h3 id="catalogo">REDRAGON Yama White RGB</h3>
+          <h3 id="catalogo" class="titulo"> REDRAGON Yama White RGB </h3>
           <center>
             <img width="300px" src="img/productos/yamaRedragon.png" />
           </center>
@@ -502,10 +543,10 @@
                 <button> <a href="https://redragon.es/products/yama-k550/" target="_blank"
                     rel="link a la página oficial">VER MÁS</a></button>
                 <!-- ? carrito -->
-                <p class="text-carrito"><a class="carrito-add" href="#">
-                    <i class='bx bx-cart-add'></i>
-                  </a> <br> Añadir al Carrito
-                <p>
+                <p class="text-carrito"><a class="carrito-add" href="#" onclick="addCart(this)">
+                    <i class='bx bx-cart-add'></i> </a> <br>
+                  Añadir al Carrito
+                </p>
               </div>
             </strong>
           </div>
@@ -553,14 +594,12 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalLabel">¡Grandes Ofertas!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <center>
           <img src="img/ofertas.png" alt="ofertas" class="ofertas-img">
         </center>
         <div class="modal-body">Oferta Válida Desde El <span style="color: red;"> 01/01/23 — 30/02/23 </span>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
@@ -572,10 +611,47 @@
 
   <!-- ? Función Para Mostrar Una Ventana De Bienvenida Al Iniciar El Programa -->
   <script>
+    // Crear una cookie
+    var ObjetosSeleccionados = [];
+
     function welcomeFuncion() {
       const modalEntrada = new bootstrap.Modal("#modalEntrada");
       modalEntrada.show();
     }
+
+    // Función para los botones añadir carrito
+    function addCart(objeto) {
+      // Obtener el elemento donde se encuetra
+      var contenedor = objeto.parentElement.parentElement;
+      // Datos del producto
+      var nombre = contenedor.getElementsByTagName("h3")[0];
+      var precio = contenedor.getElementsByTagName("p")[0];
+      var precioFinal = contenedor.getElementsByTagName("p")[1];
+      // Crear objeto
+      var producto = {
+        "nombre": nombre.innerText,
+        "precio": precio.innerText,
+        "precioFinal": precioFinal.innerText
+      }
+      // Añadir al array de objetos
+      ObjetosSeleccionados.push(producto);
+    }
+
+    // Función actualizar lista
+    function actualizarLista() {
+      var lista = document.getElementById("listaCarrito");
+      // Crear el HTML
+      var texto = "";
+      ObjetosSeleccionados.forEach(element => {
+        texto = texto + "<div class='productoLista'>";
+        texto = texto + "<p>" + element.nombre + "</p>";
+        texto = texto + "<p>" + element.precio + "</p>";
+        texto = texto + "<p>" + element.precioFinal + "</p>";
+        texto = texto + "</div>";
+      });
+      lista.innerHTML = texto;
+    }
+
   </script>
 
 </body>
