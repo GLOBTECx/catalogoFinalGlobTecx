@@ -41,17 +41,17 @@ em {
 
 /* ? Se Definió el Color de Fondo de la Página */
 .todo {
-  background-image: linear-gradient(-225deg,
+  /* background: linear-gradient(-225deg,
       #0d0820 0%,
       #1f0936 29%,
       #8d133c 67%,
-      #969111 100%);
+      #969111 100%); */
+  background: #171717 url('https://images.unsplash.com/photo-1600004853937-857d1070d505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80') no-repeat center;
 }
 
 /* ? Parte General del Formulario (Texto-Borde-Fuente) */
 .form-completo {
   width: 1000px;
-  background-color: rgba(0, 0, 0, 0.288);
   padding: 50px;
   margin: auto;
   margin-top: 10px;
@@ -60,6 +60,10 @@ em {
   font-family: "mononoki", "Fira Code", monospace, "calibri", "Courier New",
     Courier, monospace, "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(0.9rem);
+  /*For Safari, firefox does not support this type of effect yet */
+  -webkit-backdrop-filter: blur(0.9rem);
 }
 
 /* ? Parte Dónde Se Pondrán Los Datos Del Remitente */
@@ -71,8 +75,6 @@ em {
   font-size: 1em;
   border-radius: 10px;
 }
-
-
 
 /* ? Sección para escribir los detalles extras */
 .detalles {
