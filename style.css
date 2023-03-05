@@ -24,6 +24,12 @@ h4 {
     color: #432c39;
 }
 
+h6 {
+    color: red;
+    font-family: "mononoki", "Fira Code", monospace, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
 p {
     color: rgb(7, 68, 68);
     font-family: "mononoki", "Fira Code", monospace, Verdana, Geneva, Tahoma, sans-serif;
@@ -362,4 +368,10 @@ body {
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+}
+
+/* * Modal Que Saldrá para Verificar que el producto se haya añadido */
+.modal-title {
+    font-family: "mononoki", "Fira Code", monospace, 'Courier New', Courier, sans-serif;
+    color: #43e97b;
 }

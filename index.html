@@ -177,7 +177,8 @@
 
                                 <!-- ? Añadir al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
                                         <!-- ? Logo de añadir al carrito -->
                                         <i class='bx bx-cart-add'></i>
                                     </a>
@@ -251,7 +252,8 @@
 
                                 <!-- ? Añadir al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
 
                                         <!-- ? Logo de la Página -->
                                         <i class='bx bx-cart-add'></i>
@@ -324,7 +326,8 @@
 
                                 <!-- ? Añadir al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
 
                                         <!-- ? Logo de la Página -->
                                         <i class='bx bx-cart-add'></i>
@@ -401,10 +404,12 @@
 
                                 <!-- ? Añadir al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
 
                                         <!-- ? Logo de la Página -->
                                         <i class='bx bx-cart-add'></i>
+
                                     </a>
                                     <br>
                                     Añadir al Carrito
@@ -477,7 +482,8 @@
 
                                 <!-- ? Añadir al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
 
                                         <!-- ? Logo de la Página -->
                                         <i class='bx bx-cart-add'></i>
@@ -552,7 +558,8 @@
 
                                 <!-- ? Añadir al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
 
                                         <!-- ? Logo de la Página -->
                                         <i class='bx bx-cart-add'></i>
@@ -630,7 +637,8 @@
 
                                 <!-- ? Añadir al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
 
                                         <!-- ? Logo de la Página -->
                                         <i class='bx bx-cart-add'></i>
@@ -707,7 +715,9 @@
 
                                 <!-- ? Añadir al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
 
                                         <!-- ? Logo de la Página -->
                                         <i class='bx bx-cart-add'></i>
@@ -722,7 +732,7 @@
                     <!-- Siguiente Producto -->
 
                     <!-- ? REDRAGON YAMA WHITE RGB K550W-SP -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class=" col-12 col-sm-6 col-md-4 col-lg-4">
                         <div class="produc-catalogo">
 
 
@@ -742,9 +752,11 @@
                             <strong>
                                 <div class="especifi">
                                     <p>
-                                        Los Yama Black y White lo tienen todo. ¿Macros? ¡Muchas! ¿Teclas multimedia y
+                                        Los Yama Black y White lo tienen todo. ¿Macros? ¡Muchas! ¿Teclas
+                                        multimedia y
                                         RGB
-                                        dedicadas? Todas. ¿Rueda de volumen? Por supuesto. ¿Reposamuñecas? Claro que sí,
+                                        dedicadas? Todas. ¿Rueda de volumen? Por supuesto.
+                                        ¿Reposamuñecas? Claro que sí,
                                         desmontable y magnético.
                                     </p>
                                 </div>
@@ -782,13 +794,17 @@
                                 </div>
 
                                 <!-- ? Añadir al carrito -->
+
+
+                                <!-- ? Modal de aceptación de agregar al carrito -->
                                 <p class="text-carrito">
-                                    <a class="logo-addCarrito" onclick="addCar(this)">
+                                    <a class="logo-addCarrito" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        onclick="addCar(this)">
 
                                         <!-- ? Logo de la Página -->
                                         <i class='bx bx-cart-add'></i>
+                                        <br>
                                     </a>
-                                    <br>
                                     Añadir al Carrito
                                 </p>
                             </strong>
@@ -861,6 +877,25 @@
         </div>
     </div>
 
+    <!-- ? Acepta Entrar -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Tu producto se agregó al carrito</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Se añadió el producto con éxito.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- ? Indicamos la dirección del JS de bootstrap -->
     <script src="js/bootstrap.js"> </script>
 
@@ -899,23 +934,23 @@
         function actualizarLista() {
             var lista = document.getElementById("listaCarrito");
 
-            // Crear HTML
-            // var texto = "<p>" + "NO TIENES PRODUCTOS EN TU CARRITO" + "</p>" +
-            //     "\n<p>" + "Mejores Precios Siempre Aquí" + "</p>";
-
             texto = "";
-            // Condicional Para que cambie si hay productos registrados
-            if (!lista == "") {
-                objetoSeleccionado.forEach(element => {
-                    texto = texto + "<p>" + element.nombre + "</p>"
-                    texto = texto + "<p>" + element.precio + "</p>"
-                    texto = texto + "<p>" + element.precioFinal + "</p>"
-                    texto = texto + "<p>" + "------------------------------------" + "</p>"
-                });
+            // Crear HTML
+            var cont = 1;
 
-            }
+            objetoSeleccionado.forEach(element => {
+                texto = texto + "<div class='produc-carr'>"
+                texto = texto + "<h6>" + "Producto " + cont + ":</h6>";
+                texto = texto + "<p>" + element.nombre + "</p>"
+                texto = texto + "<p><del>" + element.precio + "</del></p>"
+                texto = texto + "<p>" + element.precioFinal + "</p>"
+                texto = texto + "<p>" + "------------------------------------" + "</p>"
+                texto = texto + "</div>"
+                cont++;
+            });
             lista.innerHTML = texto;
         }
+
     </script>
 
 </body>
