@@ -29,14 +29,19 @@
             <a href="./cliente/index.html">Catálogo</a>
             <a href="./cliente/formulario.html">Formulario de Servicios</a>
             <a href="./cliente/condiciones.html">Términos y Condiciones</a>
-            <button class="btnLogin">Iniciar Sesión</button>
+            <button class="btnLogin-popup">Iniciar Sesión</button>
         </nav>
     </header>
 
     <!-- * FORMULARIO -->
     <div class="evolutara">
+
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+
         <div class="form-box login">
-            <h2>Login</h2>
+            <h2>GlobTecx-</h2>
             <form action="#">
 
                 <!-- ? Email -->
@@ -62,18 +67,76 @@
                 <!-- ? Recordarme y Se Olvidó su Contraseña? -->
                 <div class="text-recuerdame">
                     <label>
-                        <input type="checkbox" name="recordarPass" id="remember-date">
+                        <input type="checkbox" name="recordarPass">
                         Recordarme
                     </label>
                     <a href="#">¿Olvidó su contraseña?</a>
                 </div>
 
                 <!-- ? Submit para validar datos ingresados -->
-                <button type="submit" class="btn">Entrar</button>
+                <button type="submit" class="btn">Iniciar Sesión</button>
 
                 <div class="inicio-registrar">
                     <p> ¿Aún no tienes un cuenta?
                         <a href="#" class="entrar-registrar">Registrate</a>
+                    </p>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="form-box register">
+
+            <h2>Crear Cuenta</h2>
+            <form action="#">
+
+                <!-- ? Nombres -->
+                <div class="input-box">
+                    <span class="icon">
+
+                        <!-- ? Icono de 'Ionicons' -->
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" required>
+                    <label>Nombre Completo</label>
+                </div>
+
+                <!-- ? Email -->
+                <div class="input-box">
+                    <span class="icon">
+                        <!-- ? Icono de 'Ionicons' -->
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Correo</label>
+                </div>
+
+                <!-- ? Password -->
+                <div class="input-box">
+                    <span class="icon">
+                        <!-- ? Icono de 'Ionicons' -->
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Contraseña</label>
+                </div>
+
+                <!-- ? Recordarme y Se Olvidó su Contraseña? -->
+                <div class="text-recuerdame">
+                    <label>
+                        <input type="checkbox" name="recordarPass">
+                        Acepto los <a href="../catalogoFinalGlobTecx/cliente/condiciones.html" target="_blank">Términos
+                            y
+                            Condiciones</a>
+                    </label>
+                </div>
+
+                <!-- ? Submit para validar datos ingresados -->
+                <button type="submit" class="btn">Iniciar Sesión</button>
+
+                <div class="inicio-registrar">
+                    <p> ¿Ya tienes una cuenta?
+                        <a href="#" class="entrar-login">Inciar Sesión</a>
                     </p>
                 </div>
 
