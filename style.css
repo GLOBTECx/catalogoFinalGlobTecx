@@ -25,9 +25,10 @@ h4 {
 }
 
 h6 {
-    color: red;
+    color: #43e97b;
     font-family: "mononoki", "Fira Code", monospace, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;
+    text-align: center;
 }
 
 p {
@@ -363,11 +364,45 @@ body {
     font-family: "mononoki", "Fira Code", monospace, 'Courier New', Courier, sans-serif;
 }
 
-/* ? Texto dentro del carrito */
-.offcanvas-body {
+/* ? Fondo del carrito */
+.offcanvas-start {
+
+    /* ? Efecto Blur */
+    background-color: rgba(116, 116, 116, 0.288);
+    backdrop-filter: blur(0.9rem);
+    /*For Safari, firefox does not support this type of effect yet */
+    -webkit-backdrop-filter: blur(0.9rem);
+
+    /* ? No hacer seleccionable el texto */
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
+}
+
+/* ? Color del título del color del carrito title  */
+.offcanvas-title {
+    color: yellow;
+}
+
+/* ? Alinear Texto Inicial */
+#listaCarrito {
+    text-align: center;
+}
+
+/* ? Color Texto Inicial */
+#listaCarrito p {
+    color: white;
+
+}
+
+/* ? Alinear Texto Cuando Se Añade Los Productos */
+.produc-carr {
+    text-align: start;
+}
+
+/* ? Botones del carrito */
+.d-grid {
+    padding-bottom: 20px;
 }
 
 /* * Modal Que Saldrá para Verificar que el producto se haya añadido */

@@ -45,8 +45,8 @@
         <!-- * Carrito de Compras -->
 
         <!-- Botón del Carrito de Compras -->
-        <button class="btn btn-success" onclick="actualizarLista()" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#carritoCompra" aria-controls="carritoCompra">
+        <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoCompra"
+            aria-controls="carritoCompra">
 
             <!-- Imagen de Carrito -->
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-bag"
@@ -62,9 +62,10 @@
 
             <!-- Titulo Del Carrito-->
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="carritoCompraLabel"> Carrito de Compras</h5>
+                <h5 class="offcanvas-title" id="carritoCompraLabel">Carrito de Compras</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
+            <div class="lineFin"></div>
 
             <!-- Cuerpo Del Carrito -->
             <div id="listaCarrito" class="offcanvas-body">
@@ -124,7 +125,7 @@
                         <div class="produc-catalogo">
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">Laptop Acer Nitro G5</h3>
+                            <h3 class="titleProduc">Laptop Acer <br> Nitro G5</h3>
                             <center>
                                 <img class="producto-imagen" src="img/productos/acer.png" alt="producto">
                             </center>
@@ -181,12 +182,10 @@
                                         onclick="addCar(this)">
                                         <!-- ? Logo de añadir al carrito -->
                                         <i class='bx bx-cart-add'></i>
-                                    </a>
-                                    <br>
+                                    </a> <br>
                                     Añadir al Carrito
                                 </p>
                             </strong>
-                            <br>
                         </div>
                     </div>
 
@@ -198,9 +197,7 @@
 
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">Tarjeta Gráfica RTX 3090 Ti
-
-                            </h3>
+                            <h3 class="titleProduc">Tarjeta Gráfica <br> RTX 3090 Ti</h3>
                             <center>
                                 <img class="producto-imagen" src="img/productos/grafica.png" alt="producto">
                             </center>
@@ -215,7 +212,8 @@
                                 <div class="especifi">
                                     <p>
                                         Las GeForce RTX™ 3090 Ti y 3090 son implacables GPUs (BFGPU) con
-                                        rendimiento de clase TITAN. Impulsadas con tecnología Ampere.
+                                        rendimiento de clase TITAN. Impulsadas con tecnología Ampere. Cuentan con 24 GB
+                                        de asombrosa memoria G6X
                                     </p>
                                 </div>
 
@@ -273,7 +271,7 @@
 
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">Teclado Mecánico Logitech G Pro</h3>
+                            <h3 class="titleProduc">Teclado Mecánico <br> Logitech G Pro</h3>
                             <center>
                                 <img class="producto-imagen" src="img/productos/teclado.png" alt="producto">
                             </center>
@@ -349,7 +347,7 @@
 
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">Monitor Gaming UltraGear™</h3>
+                            <h3 class="titleProduc">Monitor Gaming <br>UltraGear™</h3>
                             <center>
                                 <img class="producto-imagen" src="img/productos/monitor.png" alt="producto">
                             </center>
@@ -426,7 +424,7 @@
 
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">Audífono Logitech G735 Aurora</h3>
+                            <h3 class="titleProduc">Audífono Logitech<br> G735 Aurora</h3>
 
                             <center>
                                 <img class="producto-imagen" src="img/productos/cascos.png" alt="producto">
@@ -441,7 +439,7 @@
                             <strong>
                                 <div class="especifi">
                                     <p>
-                                        Los G735 maximizan el confort y el ajuste para todos los jugadores, incluso para
+                                        El confort y el ajuste para todos los jugadores, incluso para
                                         quienes tienen la cabeza pequeña. Juega a gusto con una diadema suave como las
                                         nubes
                                         y con copas giratorias.
@@ -503,7 +501,7 @@
 
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">LG Gaming Speaker GP9 Ultragear</h3>
+                            <h3 class="titleProduc">LG Gaming Speaker<br> GP9 Ultragear</h3>
 
                             <center>
                                 <img class="producto-imagen" src="img/productos/sonidoLG.png" alt="producto">
@@ -580,7 +578,7 @@
 
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">Tarjeta Gráfica RTX 3070 Ti</h3>
+                            <h3 class="titleProduc">Tarjeta Gráfica <br>RTX 3070 Ti</h3>
 
                             <center>
                                 <img class="producto-imagen" src="img/productos/rtx3070ti.png" alt="producto">
@@ -595,11 +593,8 @@
                             <strong>
                                 <div class="especifi">
                                     <p>
-                                        Cuentan con tecnología Ampere, la arquitectura RTX de segunda generación de
-                                        NVIDIA
-                                        Nuevos multiprocesadores de transmisión y memoria de alta velocidad, ideal para
-                                        la
-                                        potencia que necesitas.
+                                        La arquitectura RTX de segunda generación de NVIDIA Nuevos multiprocesadores de
+                                        transmisión y memoria de alta velocidad, ideal para la potencia que necesitas.
                                     </p>
                                 </div>
 
@@ -657,7 +652,7 @@
                         <div class="produc-catalogo">
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">Laptop ROG Strix G17</h3>
+                            <h3 class="titleProduc">Laptop ROG<br> Strix G17</h3>
 
                             <center>
                                 <img class="producto-imagen" src="img/productos/laptopROG.png" alt="producto">
@@ -737,7 +732,7 @@
 
 
                             <!-- ? Titulo y subtitulo  -->
-                            <h3 class="titleProduc">REDRAGON Yama White RGB</h3>
+                            <h3 class="titleProduc">REDRAGON Yama<br> White RGB</h3>
 
                             <center>
                                 <img class="producto-imagen" src="img/productos/yamaRedragon.png" alt="producto">
@@ -884,13 +879,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Tu producto se agregó al carrito</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        onclick="actualizarLista()"></button>
                 </div>
                 <div class="modal-body">
                     Se añadió el producto con éxito.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Continuar</button>
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal"
+                        onclick="actualizarLista()">Continuar</button>
                 </div>
             </div>
         </div>
@@ -940,8 +937,8 @@
 
             objetoSeleccionado.forEach(element => {
                 texto = texto + "<div class='produc-carr'>"
-                texto = texto + "<h6>" + "Producto " + cont + ":</h6>";
-                texto = texto + "<p>" + element.nombre + "</p>"
+                texto = texto + "<h6><u>" + "Producto " + cont + "</u></h6>";
+                texto = texto + "<p class='title-producto'>" + element.nombre + "</p>"
                 texto = texto + "<p><del>" + element.precio + "</del></p>"
                 texto = texto + "<p>" + element.precioFinal + "</p>"
                 texto = texto + "<p>" + "------------------------------------" + "</p>"
