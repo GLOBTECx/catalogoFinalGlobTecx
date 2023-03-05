@@ -6,6 +6,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
 }
 
 body {
@@ -124,7 +131,8 @@ header {
 }
 
 .evolutara.active {
-    height: 520px;
+    margin-top: 40px;
+    height: 550px;
 }
 
 /* ? Icono Para Cerrar el LOGIN */
@@ -183,7 +191,13 @@ header {
     font-family: 'mononoki', monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #7affa6;
     text-align: center;
+}
 
+.form-box h3 {
+    font-size: 2.5em;
+    font-family: 'mononoki', monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #7affa6;
+    text-align: center;
 }
 
 /* * INPUTS */
@@ -207,6 +221,13 @@ header {
     color: white;
     pointer-events: none;
     transition: .5s;
+}
+
+/* ? TExto Span */
+.input-box label span {
+    font-size: 12px;
+    font-family: 'mononoki', monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #7affa6;
 }
 
 /* ? Efecto para que el texto de los INPUTS se deslice hacia arriba */
