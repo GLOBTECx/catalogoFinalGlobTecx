@@ -26,8 +26,8 @@
             </strong>
         </p>
         <nav class="navigation">
-            <a href="./cliente/index.html">Catálogo</a>
-            <a href="./cliente/formulario.html">Formulario de Servicios</a>
+            <a href="./cliente/catalogo.html">Catálogo</a>
+            <a href=" ./cliente/formulario.html">Formulario de Servicios</a>
             <a href="./cliente/condiciones.html">Términos y Condiciones</a>
             <button class="btnLogin-popup">Iniciar Sesión</button>
         </nav>
@@ -50,7 +50,7 @@
                         <!-- ? Icono de 'Ionicons' -->
                         <ion-icon name="mail"></ion-icon>
                     </span>
-                    <input type="email" required>
+                    <input id="input-correo" type="email" required>
                     <label>Correo</label>
                 </div>
 
@@ -60,8 +60,9 @@
                         <!-- ? Icono de 'Ionicons' -->
                         <ion-icon name="lock-closed"></ion-icon>
                     </span>
-                    <input type="password" required>
+                    <input id="input-pass" type="password" required>
                     <label>Contraseña</label>
+                    <a href="../catalogoFinalGlobTecx/admin/index.html"></a>
                 </div>
 
                 <!-- ? Recordarme y Se Olvidó su Contraseña? -->
@@ -74,9 +75,8 @@
                 </div>
 
                 <!-- ? Submit para validar datos ingresados -->
-                <button type="submit" class="btn">
-                    <a href="../catalogoFinalGlobTecx/cliente/index.html"
-                        style="text-decoration: none; color: #432c39;">
+                <button type="button" class="btn" onclick="validate()">
+                    <a style="text-decoration: none; color: #432c39;">
                         Iniciar Sesión
                     </a>
                 </button>
