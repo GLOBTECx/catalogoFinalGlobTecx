@@ -46,46 +46,51 @@
 
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
+
                 <img src="../img/logoFondoRedondo.png" width="38px" height="38px" alt="">
 
                 <a class="navbar-brand">GlobTecx-</a>
 
                 <!-- ? Buscar -->
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">
+                <div class="d-flex" role="search">
+                    <input id="buscar" class="form-control me-2" type="text" placeholder="Buscar productos"
+                        aria-label="Search">
+                    <button id="btnBuscar" class="btn btn-outline-success" type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 16">
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg>
                     </button>
-                </form>
+                </div>
 
                 <!-- ? Botón de Inciar Sesión -->
-                <a href="../index.html">
-                    <button type="button" class="btn btn-dark">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
-                        </svg>
-                        Iniciar Sesión
-                    </button>
-                </a>
+                <div>
 
-                <!-- ? Botón de Mi cuenta -->
-                <a href="./gestion-perfil.html" class="btn-micount">
-                    <button type="button" class="btn btn-dark">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                        </svg>
-                        Mi Cuenta
-                    </button>
-                </a>
+                    <a href="../index.html">
+                        <button type="button" class="btn btn-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-vcard-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5ZM9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8Zm1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5Zm-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5ZM7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0Z" />
+                            </svg>
+                            Volver a Iniciar Sesión
+                        </button>
+                    </a>
+
+                    <!-- ? Botón de Mi cuenta -->
+                    <a href="./gestion-perfil.html" class="btn-micount">
+                        <button type="button" class="btn btn-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                            Hola, Aureliano
+                        </button>
+                    </a>
+                </div>
             </div>
         </nav>
 
@@ -118,8 +123,8 @@
 
             <!-- Botones del Carrito -->
             <div class="d-grid gap-2 col-6 mx-auto">
-                <a href="" id="botones-carritoActiva" class="btn btn-warning" tabindex="-1" role="button"
-                    aria-disabled="true">
+                <a href="./finalizarCompra.html" id="botones-carritoActiva" class="btn btn-warning" tabindex="-1"
+                    role="button" aria-disabled="true">
                     <span class="texto-boton">
                         PROCESAR COMPRA
                     </span>
@@ -206,7 +211,6 @@
                                     <li>144hz</li>
                                     <li>15.6"</li>
                                 </div>
-
                                 <!-- ? Descuento del Producto -->
                                 <p class="dsct">
                                     <em>S/ 7,999.00</em>
@@ -945,11 +949,59 @@
         </div>
     </div>
 
-    <!-- ? Indicamos la dirección del JS de bootstrap -->
+    <script>
+        // Funcionalidad del Buscador
+        btnBuscar.onclick = function () {
+            var buscar = document.getElementById("buscar").value;
+
+            switch (buscar) {
+                case "":
+                    alert("Texto erroneo, el campo no puede estar vacio");
+                    break;
+                case "Laptop Acer Nitro G5":
+                    alert("PRODUCTO ENCONTRADO en el número: 1 - 1er Fila");
+                    buscar.value == "";
+                    break;
+                case "Tarjeta Gráfica RTX 3090 Ti":
+                    alert("PRODUCTO ENCONTRADO en el número: 2 - 1er Fila");
+                    break;
+                case "Teclado Mecánico Logitech G Pro":
+                    alert("PRODUCTO ENCONTRADO en el número: 3 - 1er Fila");
+                    break;
+                case "Monitor Gaming UltraGear™":
+                    alert("PRODUCTO ENCONTRADO en el número: 4 - 2da Fila");
+                    break;
+                case "Audífono Logitech G735 Aurora":
+                    alert("PRODUCTO ENCONTRADO en el número: 5 - 2da Fila");
+                    break;
+                case "LG Gaming Speaker GP9 Ultragear":
+                    alert("PRODUCTO ENCONTRADO en el número: 6 - 2da Fila");
+                    break;
+                case "Tarjeta Gráfica RTX 3070 Ti":
+                    alert("PRODUCTO ENCONTRADO en el número: 7 - 3era Fila");
+                    break;
+                case "Laptop ROG Strix G17":
+                    alert("PRODUCTO ENCONTRADO en el número: 8 - 3era Fila");
+                    break;
+                case "REDRAGON Yama White RGB":
+                    alert("PRODUCTO ENCONTRADO en el número: 9 - 3era Fila");
+                    break;
+                default:
+                    alert("No Se Encontraron Productos");
+            }
+        }
+
+    </script>
+    <!-- * Indicamos la dirección del JS de bootstrap -->
     <script src="../bootstrap/js/bootstrap.js"></script>
 
-    <!-- ? Script Funcionalidades -->
+    <!-- * Script Funcionalidades -->
     <script src="./script.js"></script>
+
+    <!-- * ICONOS 'Ionicons 5.5.2' -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 </body>
 

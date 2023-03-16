@@ -51,6 +51,7 @@ function actualizarLista() {
         texto = texto + "<p class='title-producto'>" + element.nombre + "</p>"
         texto = texto + "<p><del>" + element.precio + "</del></p>"
         texto = texto + "<p>" + element.precioFinal + "</p>"
+        texto = texto + "<div class='eliminarProduc'><ion-icon name='trash-outline'></ion-icon> </div>"
         texto = texto + "<p>" + "------------------------------------" + "</p>"
         texto = texto + "</div>"
         cont++;
@@ -62,3 +63,6 @@ function actualizarLista() {
 function refrescarPagina() {
     location.reload();
 }
+
+// * Carrito
+const carrInfo = document.querySelector('produc-carr')

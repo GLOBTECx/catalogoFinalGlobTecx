@@ -22,25 +22,6 @@ iconClose.addEventListener('click', () => {
 });
 
 // * Validar User y Contraseña
-// function validate() {
-//     var correo = document.getElementById("input-correo").value;
-//     var contra = document.getElementById("input-pass").value;
-//     if (correo == "ybermarlon@gmail.com" && contra == "62756606") {
-//         alert("Contraseña Validada Corréctamente. Se ingresó como ADMINISTRADOR");
-//         console.log(correo + " " + contra);
-//         window.location("./admin/index.html");
-//         return false;
-//     } else if (correo == "cliente@gmail.com" && contra == "cliente") {
-//         alert("Contraseña Validada Corréctamente. Se ingresó como CLIENTE");
-//         window.location("./catalogo.html");
-//         console.log(correo + " " + contra);
-//         return false;
-//     } else {
-//         alert("Error de Credenciales. Intente Nuevamente")
-//     }
-
-// }
-
 function validate() {
     let user = document.getElementById('input-correo').value;
     let clave = document.getElementById('input-pass').value;
