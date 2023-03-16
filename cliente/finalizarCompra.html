@@ -119,12 +119,12 @@
         function eliminarProducto() {
             $("#productos").remove();
             $(".btn.btn-success").remove();
-            $("#carrito").html('<div class="col col-12 border-bottom p-5 text-center">No hay ningún producto en el carrito' +
-                '. Busque en nuestro catálogo y presione en AÑADIR AL CARRITO' +
+            $("#carrito").html('<div class="col col-12 border-bottom p-5 text-center"><p style="color: white;"><strong>No hay ningún producto en el carrito' +
+                '. Busque en nuestro catálogo y presione en AÑADIR AL CARRITO</strong></p>' +
                 '<div class="col col-12 p-5">' +
                 '<a href="./catalogo.html">\n<button type="button" class="btn btn-success">\nVolver al Catálogo\n</button></a>');
 
-            $("#totalPagar").html('<div class="col col-12 border-bottom">' +
+            $("#cuerpoTotal").html('<div class="col col-12 border-bottom">' +
                 '<h3>Resumen del Pedido</h3> </div>');
 
         }
